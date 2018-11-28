@@ -25,32 +25,56 @@
             </div>
         </header>
         <main class="flexmain">
-            <h2>Contact Us!</h2>
-            <form>
-                <p>
-                    <label for="firstname">First Name:</label>
-                    <input type="firstname" name="firstname" id="firstname" placeholder="Harry">
-                </p>
-                <p>
-                    <label for="lastname">Last Name:</label>
-                    <input type="lastname" name="lastname" id="lastname" placeholder="Potter">
-                </p>
-                <p>
-                    <label for="phone">Phone:</label>
-                    <input type="phone" name="phone" id="phone" placeholder="781-452-4077">
-                </p>
-                <p>
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="email" id="email" placeholder="hpotter7@mail.naz.edu">
-                </p>
-                <p>
-                    <label for="comments">Comments:</label>
-                    <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
-                </p>
-                <p>
-                    <label for="myChoice">Rate this website:</label><br> Poor <input type="range" name="myChoice" id="myChoice" min="1" max="100"> Totally Awesome
-                </p>
-            </form>
+            <div class="flexcontact">
+                <h2>Contact Us!</h2>
+                <form>
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Harry">
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Potter">
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="781-452-4077">
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" placeholder="hpotter7@mail.naz.edu">
+                    </p>
+                    <p>
+                        <label for="how-you-heard">How did you hear about us?</label>
+                        <select name="how-you-heard" id="how-you-heard">
+                    <option value="email">Email</option>
+                    <option value="ad">Advertisement</option>
+                    <option value="friend">Friend</option>
+                    <option value="web">Website</option>
+                    <option value="search">Google Search</option>
+                    <option value="owl">Owl</option>
+                </select>
+                    </p>
+                    <p>
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+                    </p>
+                    <p>
+                        <label for="myChoice">Rate this website:</label> Poor <input type="range" name="myChoice" id="myChoice" min="1" max="100"> Totally Awesome
+                    </p>
+
+                    <p>
+                        <label for="join-newsletter">Would you like to join our newsletter?</label>
+                        <input type="radio" name="join-newsletter" value="Yes" checked>Yes
+                        <input type="radio" name="join-newsletter" value="No">No
+                    </p>
+                    <p>
+                        <label></label>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </p>
+                </form>
+            </div>
         </main>
         <footer class="flexfooter">
             <div style="color: darkslategray; padding-top:  15px">
