@@ -38,40 +38,45 @@
                     </p>
                     <p>
                         <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="781-452-4077">
+                        <input type="tel" name="phone" id="phone" placeholder="7814524077" maxlength="10">
                     </p>
                     <p>
                         <label for="email">E-mail:</label>
-                        <input type="text" name="email" id="email" placeholder="hpotter7@mail.naz.edu">
+                        <input type="email" name="email" id="email" placeholder="hpotter7@mail.naz.edu" maxlength="50">
                     </p>
                     <p>
                         <label for="how-you-heard">How did you hear about us?</label>
                         <select name="how-you-heard" id="how-you-heard">
-                    <option value="email">Email</option>
-                    <option value="ad">Advertisement</option>
-                    <option value="friend">Friend</option>
-                    <option value="web">Website</option>
-                    <option value="search">Google Search</option>
-                    <option value="owl">Owl</option>
-                </select>
+                            <option value="owl">Owl</option>
+                            <option value="email">Email</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="friend">Friend</option>
+                            <option value="web">Website</option>
+                            <option value="search">Google Search</option>
+                        </select>
                     </p>
                     <p>
                         <label for="comments">Comments:</label>
-                        <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+                        <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
                     </p>
                     <p>
                         <label for="myChoice">Rate this website:</label> Poor <input type="range" name="myChoice" id="myChoice" min="1" max="100"> Totally Awesome
                     </p>
-
                     <p>
-                        <label for="join-newsletter">Would you like to join our newsletter?</label>
-                        <input type="radio" name="join-newsletter" value="Yes" checked>Yes
-                        <input type="radio" name="join-newsletter" value="No">No
+                        <label for="join-newsletter">Would you like to join our newsletter and/or set up an account?</label>
+                        <input type="checkbox" name="join-newsletter" id="join-newsletter" value="newsletter">Newsletter
+                        <input type="checkbox" name="join-newsletter" id="join-newsletter2" value="account">Account
+                        <input type="checkbox" name="join-newsletter" id="join-newsletter3" value="neither">Neither
+                    </p>
+                    <p>
+                        <label for="copy-response">Would you like a copy of your answers emailed to you?</label>
+                        <input type="radio" name="copy-response" id="copy-response" value="yes">Yes
+                        <input type="radio" name="copy-response" id="copy-response2" value="no">No
                     </p>
                     <p>
                         <label></label>
-                        <input type="submit" value="Submit">
-                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit" style="background-color: darkcyan; color: white; font-family: sans-serif">
+                        <input type="reset" value="Reset" style="background-color: darkcyan; color: white; font-family: sans-serif">
                     </p>
                 </form>
             </div>
